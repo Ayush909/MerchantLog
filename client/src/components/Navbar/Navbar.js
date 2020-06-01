@@ -81,12 +81,16 @@ class Navbar extends Component{
                     <li>
                         <Link to="/" className="sidenav-close">Home</Link>
                     </li>
-                    <li>
-                        <Link to="/login" className="sidenav-close">Login</Link>
-                    </li>
-                    <li>
-                        <Link to="/register" className="sidenav-close">Register</Link>
-                    </li>
+                    {this.props.isLogged || localStorage.getItem('jwt') !== null ?
+                        null : <li>
+                                <Link to="/login" >Login</Link>
+                                </li>
+                    }
+                     {this.props.isLogged || localStorage.getItem('jwt') !== null ?
+                        null : <li>
+                                <Link to="/register" >Register</Link>
+                                </li>
+                    }
                     <li>
                         <Link to="/" className="sidenav-close">Contact</Link>
                     </li>
