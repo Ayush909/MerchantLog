@@ -52,7 +52,7 @@ class LoginUser extends Component{
                 this.props.history.push('/dashboard')
             })
             .catch(err=>{
-                console.log(err.response.data)
+                // console.log(err.response.data)
                 M.toast({html: err.response.data, classes:'#ef5350 red lighten-1'})
             })
     

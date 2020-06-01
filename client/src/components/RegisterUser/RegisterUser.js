@@ -48,15 +48,15 @@ class RegisterUser extends Component{
             password : this.state.password
         }
 
-        console.log(newUser)
+        // console.log(newUser)
         axios.post('/api/user/register',newUser)
                 .then(res=>{
-                    console.log(res.data)
+                    // console.log(res.data)
                     M.toast({html: 'Account created!', classes:'green'})
                     window.location = '/login'
                 })
                 .catch(err=>{
-                    console.log(err.response.data)
+                    // console.log(err.response.data)
                     M.toast({html: err.response.data, classes:'#ef5350 red'})
                 })
       
