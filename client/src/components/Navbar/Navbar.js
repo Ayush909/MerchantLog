@@ -94,6 +94,13 @@ class Navbar extends Component{
                     <li>
                         <Link to="/" className="sidenav-close">Contact</Link>
                     </li>
+                    
+                    {this.props.isLogged || localStorage.getItem('jwt') !== null ? 
+                        <li>
+                            <Link to="/dashboard" className="nav-link" >Dashboard</Link>   
+                                                                                                        
+                        </li> : null }
+
                     {this.props.isLogged || localStorage.getItem('jwt') !== null ? 
                     <li>
                         <Link to="/" className="nav-link sidenav-close" onClick={this.SignOutUser}>SignOut</Link>                                                                             
