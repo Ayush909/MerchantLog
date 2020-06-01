@@ -1,0 +1,29 @@
+.not-found-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0px;
+    
+}
+.not-found-left{
+    text-align: center;
+}
+
+.not-found-left h4{
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 10px 0px;
+}
+.not-found-left h6{
+    font-size: 1rem;
+    margin: 10px 0px;
+}
+.not-found-right img{
+    width: 100%;
+} 
+
+@media only screen  and (min-width:769px){
+    .not-found-wrapper{
+        margin-top: 100px;
+    }
+}

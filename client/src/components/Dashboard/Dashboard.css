@@ -1,0 +1,46 @@
+.dashboard-main-wrapper{
+    display: flex;
+}
+.left-dash-wrapper{
+    background-color: #ff073a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 300px;
+}
+.left-dash-wrapper h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0;
+}
+.left-dash-wrapper h4{
+    font-size: 1.3rem;
+}
+.left-dash-wrapper ul{
+    list-style-position: inside;
+}
+.left-dash-wrapper ul li{
+    list-style-type: square!important;
+}
+
+
+.right-dash-wrapper{
+    flex: 1;
+    
+}
+.right-dash-wrapper  h3{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+@media only screen  and (min-width:768px){
+    .right-dash-wrapper{
+        margin-top: 100px;
+    }
+    .right-dash-wrapper h3{
+        font-size: 2.0rem;
+    }
+}
