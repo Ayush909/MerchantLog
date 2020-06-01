@@ -25,7 +25,7 @@ class Dashboard extends Component{
 
     componentDidMount(){
         let arr ;
-        axios.post('http://localhost:5000/api/isShopReg',{user_id : localStorage.getItem('user_id')})
+        axios.post('/api/isShopReg',{user_id : localStorage.getItem('user_id')})
             .then(res=>{
                 arr = res.data
                 if(arr){
@@ -92,7 +92,7 @@ class Dashboard extends Component{
             shop_phone : this.state.shop_phone
         }
 
-        axios.post('http://localhost:5000/api/userdata',shop,{
+        axios.post('/api/userdata',shop,{
             headers : {
                 'Authorization' : 'Bearer ' + localStorage.getItem('jwt')
             }

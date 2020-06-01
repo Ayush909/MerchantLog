@@ -40,7 +40,7 @@ class LoginUser extends Component{
         }
 
 
-        axios.post('http://localhost:5000/api/user/login',user)
+        axios.post('/api/user/login',user)
             .then(res=>{
                 const token  = res.data.token
                 const user  = res.data.user
