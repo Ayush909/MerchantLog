@@ -13,7 +13,7 @@ class HomePage extends Component{
     }
 
     componentDidMount(){
-        axios.get('http://localhost:5000/api/shops')
+        axios.get('/api/shops')
              .then(res=>{
                  this.setState({
                      shops : res.data
